@@ -202,7 +202,7 @@ pythontex-files-*/
 *.xmpi
 
 # xindy
-*.xdy
+# *.xdy
 
 # xypic precompiled matrices
 *.xyc
