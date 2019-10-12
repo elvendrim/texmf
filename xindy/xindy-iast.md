@@ -62,7 +62,7 @@ as a beginner, and get a workable result from make-rules.
 I therefore made up a very simple Xindy style file,
 `IAST.xdy`, with the following content:
 
-`
+```
 (merge-rule "ā" "a")
 (merge-rule "Ā" "a")
 (merge-rule "ḍ" "d")
@@ -77,6 +77,8 @@ I therefore made up a very simple Xindy style file,
 (merge-rule "Ḷ" "l")
 (merge-rule "ṃ" "m")
 (merge-rule "Ṃ" "m")
+(merge-rule "ṁ" "m")
+(merge-rule "Ṁ" "m")
 (merge-rule "ṅ" "n")
 (merge-rule "Ṅ" "n")
 (merge-rule "ṇ" "n")
@@ -93,7 +95,7 @@ I therefore made up a very simple Xindy style file,
 (merge-rule "Ṭ" "t")
 (merge-rule "ū" "u")
 (merge-rule "Ū" "u")
-`
+```
 
 Then,
 
