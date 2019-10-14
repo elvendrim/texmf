@@ -4,9 +4,10 @@
 - Date: 2016-07-26
 - Source: <http://cikitsa.blogspot.bg/2016/07/getting-xindy-to-work-for-iast-encoded.html>
 
-[Xindy](https://en.wikipedia.org/wiki/Xindy) is an index-processor for use
-with TeX and LaTeX. It is a successor to Makeindex, and is the standard system
-for formatting and sorting indexes and glossaries that go with LaTeX documents.
+Xindy (`fleXible INDexing sYstem') is a flexible index processor that
+creates tagged index for publication system. xindy merges, sorts, and
+outputs markup for raw index entries. It is highly configurable. It
+supports many languages.
 
 ## Sources
 
