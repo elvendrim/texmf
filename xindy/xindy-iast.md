@@ -63,7 +63,7 @@ as a beginner, and get a workable result from make-rules.
 I therefore made up a very simple Xindy style file,
 `IAST.xdy`, with the following content:
 
-```
+``` text
 (merge-rule "ā" "a")
 (merge-rule "Ā" "a")
 (merge-rule "ḍ" "d")
