@@ -1,0 +1,47 @@
+%!TEX TS-program = xelatex
+%!TEX builder = latexmk
+%!TEX encoding = UTF-8 Unicode
+%!TeX spellcheck = en-US
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+\usepackage[parfill]{parskip}
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{6pt plus 2pt minus 1pt}
+  \setlength{\emergencystretch}{3em}
+  \frenchspacing
+\usepackage{fontspec}
+  \setmainfont{Linguistics Pro}[Mapping=tex-text]
+\usepackage{hologo}
+\title{TECkit mapping for \hologo{TeX} input conventions to Unicode characters}
+\author{}
+\date{\relax}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+Ligatures from Knuth's original CMR fonts:
+\bigskip\par\noindent
+
+En dash: \textit{from} \verb|--| \textit{to} --\\
+Em dash: \textit{from} \verb|---| \textit{to} ---
+
+Right single quote: \textit{from} \verb|'| \textit{to} '\\
+Right double quote: \textit{from} \verb|''| \textit{to} ''\\
+Right double quote: \textit{from} \verb|"| \textit{to} "
+
+Left single quote: \textit{from} \verb|`| \textit{to} `\\
+Left double quote: \textit{from} \verb|``| \textit{to} ``
+
+Inverted exclamation: \textit{from} \verb|!`| \textit{to} !`\\
+Inverted question: \textit{from} \verb|?`| \textit{to} ?`
+\bigskip\par\noindent
+
+Additions supported in T1 encoding:
+\bigskip\par\noindent
+
+Double low-9 quotation mark: \textit{from} \verb|,,| \textit{to} ,,\\
+Left pointing guillemet: \textit{from} \verb|<<| \textit{to} <<\\
+Right pointing guillemet: \textit{from} \verb|>>| \textit{to} >>
+
+\end{document}

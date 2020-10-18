@@ -1,0 +1,25 @@
+; TECkit mapping for TeX input conventions <-> Unicode characters
+
+LHSName	"TeX-text"
+RHSName	"UNICODE"
+
+pass(Unicode)
+
+; Ligatures from Knuth's original CMR fonts
+U+002D U+002D         <>  U+2013  ; -- -> en dash
+U+002D U+002D U+002D  <>  U+2014  ; --- -> em dash
+
+U+0027        <>  U+2019  ; '  -> right single quote
+U+0027 U+0027 <>  U+201D  ; '' -> right double quote
+U+0022         >  U+201D  ; "  -> right double quote
+
+U+0060        <>  U+2018  ; `  -> left single quote
+U+0060 U+0060 <>  U+201C  ; `` -> left double quote
+
+U+0021 U+0060 <>  U+00A1  ; !` -> inverted exclam
+U+003F U+0060 <>  U+00BF  ; ?` -> inverted question
+
+; Additions supported in T1 encoding
+U+002C U+002C <>  U+201E  ; ,, -> double low-9 quotation mark
+U+003C U+003C <>  U+00AB  ; << -> left pointing guillemet
+U+003E U+003E <>  U+00BB  ; >> -> right pointing guillemet
