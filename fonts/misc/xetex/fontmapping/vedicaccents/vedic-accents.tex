@@ -1,0 +1,95 @@
+%!TEX TS-program = xelatex
+%!TEX builder = latexmk
+%!TEX encoding = UTF-8 Unicode
+%!TeX spellcheck = en-US
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+  \geometry{a4paper,portrait}
+\usepackage[parfill]{parskip}
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{6pt plus 2pt minus 1pt}
+  \setlength{\emergencystretch}{3em}
+\usepackage{fontspec}
+  \newcommand\fsname{Shobhika}% name of the font to test
+\usepackage{xcolor}
+\usepackage{fontspec}
+  \newfontfamily\feng{Linguistics Pro}% for Latin text
+  \newfontfamily\fsnsk[Mapping=test-accents,Script=Devanagari]{\fsname}[Colour=blue]% mapped font
+% macros to test symbol input method
+\newcommand\fsktna{न}
+\newcommand\fsktma{^^^^092e}
+\newcommand\fskthalant{^^^^094d}
+\newcommand\fsktsa{स}
+\newcommand\fsktta{त}
+\newcommand\fskte{^^^^0947}
+\newcommand\fsktA{ा}
+\newcommand\udatta{^^^^0951}
+\newcommand\doublesvarita{^^^^1cda}
+
+\begin{document}
+
+\fsnsk {\feng \fsname\ font:}
+
+
+नमा॑स्ते᳚ {\feng (direct input)}
+
+
+\fsktna\fsktma\fsktA\udatta\fsktsa\fskthalant\fsktta\fskte\doublesvarita \ {\feng (macro/symbol input)}
+
+
+namaa(,,)s-te(ds) {\feng (mapped input)}
+
+\large
+
+{\feng (hh)}~ma(hh)
+{\feng (,,)}~ma(,,)
+{\feng (..)}~ma(..)
+{\feng (ac)}~ma(ac)
+{\feng (gr)}~ma(gr)
+{\feng (cbi)}~ma(cbi)
+{\feng (mh)}~ma(mh)
+
+{\feng (k)}~ma(k)
+{\feng (s)}~ma(s)
+{\feng (p)}~ma(p)
+{\feng (n)}~ma(n)
+{\feng (yms)}~ma(yms)
+{\feng (yais)}~ma(yais)
+{\feng (yis)}~ma(yis)
+{\feng (ykis)}~ma(ykis)
+{\feng (cb)}~ma(cb)
+{\feng (ykiss)}~ma(ykiss)
+{\feng (ds)}~ma(ds)
+{\feng (ts)}~ma(ts)
+{\feng (ka)}~ma(ka)
+{\feng (db)}~ma(db)
+{\feng (2db)}~ma(2db)
+{\feng (3db)}~ma(3db)
+{\feng (rkis)}~ma(rkis)
+{\feng (ais)}~ma(ais)
+{\feng (vs)}~ma(vs)
+{\feng (vu)}~ma(vu)
+{\feng (rvu)}~ma(rvu)
+{\feng (va)}~ma(va)
+{\feng (rva)}~ma(rva)
+{\feng (vut)}~ma(vut)
+{\feng (vat)}~ma(vat)
+{\feng (aa)}~ma(aa)
+{\feng (ab)}~ma(ab)
+{\feng (av)}~ma(av)
+{\feng (avt)}~ma(avt)
+{\feng (t)}~ma(t)
+{\feng (hla)}~ma(hla)
+{\feng (lna)}~ma(lna)
+{\feng (rla)}~ma(rla)
+{\feng (aum)}~ma(aum)
+{\feng (ar)}~ma(ar)
+{\feng (rar)}~ma(rar)
+{\feng (c)}~ma(c)
+{\feng (j)}~ma(j)
+{\feng (u)}~ma(u)
+%{\feng (xxx)}~ma(xxx)
+{\feng (rab)}~ma(rab)
+{\feng (dra)}~ma(dra)
+
+\end{document}
