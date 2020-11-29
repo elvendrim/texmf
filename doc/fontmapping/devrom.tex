@@ -1,0 +1,33 @@
+%!TEX encoding = UTF-8 Unicode
+%!TEX TS-program = XeLaTeX
+%!TEX builder = latexmk
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage[parfill]{parskip}
+
+\newfontfamily\textskt{Siddhanta}
+\newfontfamily\textiast[Mapping=devrom]{Siddhanta}
+
+\newcommand{\skt}[1]{{\textskt{#1}}}
+\newcommand{\iast}[1]{{\textiast{#1}}}
+
+\begin{document}
+Two new commands \texttt{\textbackslash skt} and \texttt{\textbackslash iast}
+enable writing IAST text in Devanāgarī, to have it rendered as IAST in the PDF.
+
+\noindent\fbox{\parbox{\textwidth}{
+\texttt{Example of Devanāgarī Text:\\
+\textbackslash skt\{}\skt{रामो राजमणि सदा विजयते रामं रमेशं भजे।}\texttt{\}\\
+Example of IAST Text written in Devanāgarī:\\
+\textbackslash iast\{}\skt{रामो राजमणि सदा विजयते रामं रमेशं भजे।}\texttt{\}}
+}}
+
+$$\downarrow$$
+
+\noindent\fbox{\parbox{\textwidth}{
+Example of Devanāgarī Text:\\
+\skt{रामो राजमणि सदा विजयते रामं रमेशं भजे।}\\
+Example of IAST Text written in Devanāgarī:\\
+\iast{रामो राजमणि सदा विजयते रामं रमेशं भजे।}
+}}
+\end{document}
