@@ -1,0 +1,73 @@
+%!TEX encoding = UTF-8 Unicode
+%!TEX TS-program = XeLaTeX
+%!TEX builder = latexmk
+\documentclass[12pt,oneside,a4paper]{xraum}
+\title{The \textit{xraum} class}
+\subtitle{Standard article class adapted for typsetting documents in IAST/Devanāgarī}
+\author{Elvendrim}
+\subject{XeLaTeX Sanskrit documents typesetting}
+\keywords{iast,article,xelatex,fontspec,polyglossia,sanskrit,devanagari}
+\date{\small{2020/11/07 v 0.1}}
+
+\begin{document}
+\maketitle
+\bigskip
+\thispagestyle{empty}
+
+\textbf{Base font}:
+\textit{Adobe Devanagari}\footnote{\url{https://fonts.adobe.com/fonts/adobe-devanagari}}
+from \textit{Adobe Originals} designed by
+\href{https://fonts.adobe.com/designers/fiona-ross}{Fiona Ross},
+\href{https://fonts.adobe.com/designers/robert-slimbach}{Robert Slimbach},
+and \href{https://fonts.adobe.com/designers/tim-holloway}{Tim Holloway}.
+Sanskrit text in Devanāgarī and IAST:
+
+Regular:
+
+\begin{quote}
+\dn{ॐ अ॒ग्निमी॑ळे पु॒रोहि॑तं य॒ज्ञस्य॑ दे॒वमृत्विज॑म् । होता॑रं रत्न॒धात॑मम् ॥१॥}\\
+\dn{अ॒ग्निः पूर्वे॑भि॒रृषि॑भि॒रीड्यो॒ नूत॑नैरु॒त । स दे॒वाँ एह व॑क्षति ॥२॥}
+
+om̐ agnimiḷe purohitaṁ yajñasya devamṛtvijam \dn{।}
+hotāraṁ ratnadhātamam \dn{॥} 1\dn{॥}\\
+agniḥ pūrvebhirṛṣibhirīḍyo nūtanairuta \dn{।}
+sa devām̐ eha vakṣati \dn{॥} 2\dn{॥}
+\end{quote}
+
+Italic:
+
+\begin{quote}
+\textit{\dn{ॐ अ॒ग्निमी॑ळे पु॒रोहि॑तं य॒ज्ञस्य॑ दे॒वमृत्विज॑म् । होता॑रं रत्न॒धात॑मम् ॥१॥}}\\
+\textit{\dn{अ॒ग्निः पूर्वे॑भि॒रृषि॑भि॒रीड्यो॒ नूत॑नैरु॒त । स दे॒वाँ एह व॑क्षति ॥२॥}}
+
+\textit{om̐ agnimiḷe purohitaṁ yajñasya devamṛtvijam} \dn{।}
+\textit{hotāraṁ ratnadhātamam} \dn{॥} 1\dn{॥}\\
+\textit{agniḥ pūrvebhirṛṣibhirīḍyo nūtanairuta} \dn{।}
+\textit{sa devām̐ eha vakṣati} \dn{॥} 2\dn{॥}
+\end{quote}
+
+Bold:
+
+\begin{quote}
+\textbf{\dn{ॐ अ॒ग्निमी॑ळे पु॒रोहि॑तं य॒ज्ञस्य॑ दे॒वमृत्विज॑म् । होता॑रं रत्न॒धात॑मम् ॥१॥}}\\
+\textbf{\dn{अ॒ग्निः पूर्वे॑भि॒रृषि॑भि॒रीड्यो॒ नूत॑नैरु॒त । स दे॒वाँ एह व॑क्षति ॥२॥}}
+
+\textbf{om̐ agnimiḷe purohitaṁ yajñasya devamṛtvijam} \dn{।}
+\textbf{hotāraṁ ratnadhātamam} \dn{॥} 1\dn{॥}\\
+\textbf{agniḥ pūrvebhirṛṣibhirīḍyo nūtanairuta} \dn{।}
+\textbf{sa devām̐ eha vakṣati} \dn{॥} 2\dn{॥}
+\end{quote}
+
+Bold Italic:
+
+\begin{quote}
+\textit{\bfseries\dn{ॐ अ॒ग्निमी॑ळे पु॒रोहि॑तं य॒ज्ञस्य॑ दे॒वमृत्विज॑म् । होता॑रं रत्न॒धात॑मम् ॥१॥}}\\
+\textit{\bfseries\dn{अ॒ग्निः पूर्वे॑भि॒रृषि॑भि॒रीड्यो॒ नूत॑नैरु॒त । स दे॒वाँ एह व॑क्षति ॥२॥}}
+
+\textit{\bfseries om̐ agnimiḷe purohitaṁ yajñasya devamṛtvijam} \dn{।}
+\textit{\bfseries hotāraṁ ratnadhātamam} \dn{॥} 1\dn{॥}\\
+\textit{\bfseries agniḥ pūrvebhirṛṣibhirīḍyo nūtanairuta} \dn{।}
+\textit{\bfseries sa devām̐ eha vakṣati} \dn{॥} 2\dn{॥}
+\end{quote}
+
+\end{document}
